@@ -15,16 +15,16 @@ In summary, the website utilizes various web technologies to create an engaging 
 Screenshots of the website
 
 Main.html
-<a href="https://i.imgur.com/Zf9wV8a.jpg">
+<img src="https://i.imgur.com/Zf9wV8a.jpg">
 
 Books.html
-<a href="https://i.imgur.com/O4hNMDX.jpg">
+<img src="https://i.imgur.com/O4hNMDX.jpg">
 
 Login.html
-<a href="https://i.imgur.com/PmHmxbL.jpg">
+<img src="https://i.imgur.com/PmHmxbL.jpg">
 
 Register.html
-<a href="https://i.imgur.com/DkUcIfh.jpg">
+<img src="https://i.imgur.com/DkUcIfh.jpg">
 
 Faq.html
-<a href="https://i.imgur.com/NPWBJQO.jpg">
+<img src="https://i.imgur.com/NPWBJQO.jpg">
