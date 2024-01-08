@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="../css_files/style.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      <i class="fas fa-user-circle fa-4x"></i>
+      <h2>Login</h2>
+      <form>
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <p class="change-password"><a href="changepass.html">change password?</a></p>
+      <p class="register-link">Don't have an account? <a href="register.html">Sign up</a></p>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector("form");
+  
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+  
+        const enteredUsername = document.getElementById("username").value;
+        const enteredPassword = document.getElementById("password").value;
+  
+        const storedUsername = localStorage.getItem("username");
+        const storedPassword = localStorage.getItem("password");
+  
+        if (enteredUsername === storedUsername && enteredPassword === storedPassword) {
+          alert("Login successful!");
+          sessionStorage.setItem("isLoggedIn", "true");
+          window.location.href = ("index.html");
+
+        } else {
+          alert("Login failed. Please check your username and password.");
+        }
+      });
+    });
+  </script>
+</body>
+</html>

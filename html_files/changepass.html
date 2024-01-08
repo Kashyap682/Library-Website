@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>change Password</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="../css_files/style.css">
+</head>
+<body>
+  <div class="change-password-container">
+    <div class="change-password-card">
+      <i class="fas fa-unlock-alt fa-4x"></i>
+      <h2>Change Password</h2>
+      <form>
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="input-group">
+          <label for="old_password">Old Password</label>
+          <input type="password" id="old_password" name="old_password" required>
+        </div>
+        <div class="input-group">
+          <label for="new_password">New Password</label>
+          <input type="password" id="new_password" name="new_password" required>
+        </div>
+        <div class="input-group">
+          <label for="confirm_new_password">Confirm New Password</label>
+          <input type="password" id="confirm_new_password" name="confirm_new_password" required>
+        </div>
+        <button type="submit">Change Password</button>
+      </form>
+      <p class="login-link">Remember your password? <a href="login.html">Login</a></p>
+      <p class="register-link">Don't have an account? <a href="register.html">Sign up</a></p>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector("form");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const enteredUsername = document.getElementById("username").value;
+        const enteredOldPassword = document.getElementById("old_password").value;
+        const enteredNewPassword = document.getElementById("new_password").value;
+        const enteredConfirmNewPassword = document.getElementById("confirm_new_password").value;
+
+        // Retrieve locally stored username and password
+        const storedUsername = localStorage.getItem("username");
+        const storedPassword = localStorage.getItem("password");
+
+        if (enteredUsername === storedUsername && enteredOldPassword === storedPassword) {
+          if (enteredNewPassword === enteredConfirmNewPassword) {
+
+            localStorage.setItem("password", enteredNewPassword);
+            alert("Password changed successfully!");
+            window.location.href= ("login.html");
+            form.reset();
+          } else {
+            alert("New passwords do not match. Please try again.");
+          }
+        } else {
+          alert("Username or old password is incorrect. Please check your credentials.");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
