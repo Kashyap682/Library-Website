@@ -1,0 +1,54 @@
+{
+    "books": [
+      {
+        "name": "Dune",
+        "coverImage": "/book_covers/dune.jpg",
+        "author": "Frank Herbert",
+        "isbn": "059309932X",
+        "description": "Set on the desert planet Arrakis, Dune is the story of the boy Paul Atreides, heir to a noble family tasked with ruling an inhospitable world where the only thing of value is the “spice” melange, a drug capable of extending life and enhancing consciousness. Coveted across the known universe, melange is a prize worth killing for..."
+      },
+      {
+        "name": "A Game of Thrones",
+        "coverImage": "/book_covers/got.jpg",
+        "author": "George R.R. Martin",
+        "isbn": "0008209103",
+        "description": "Long ago, in a time forgotten, a preternatural event threw the seasons out of balance. In a land where summers can last decades and winters a lifetime, trouble is brewing. The cold is returning, and in the frozen wastes to the north of Winterfell, sinister forces are massing beyond the kingdom’s protective Wall."
+      },
+      {
+        "name": "Harry Potter and the Philosopher's Stone",
+        "coverImage": "/book_covers/hp1.jpg",
+        "author": "J.K. Rowling",
+        "isbn": "1112233445",
+        "description": "When a letter arrives for unhappy but ordinary Harry Potter, a decade-old secret is revealed to him that apparently he’s the last to know. His parents were wizards, killed by a Dark Lord’s curse when Harry was just a baby, and which he somehow survived. Leaving his unsympathetic aunt and uncle for Hogwarts, a wizarding school brimming with ghosts and enchantments."
+      },
+      {
+        "name": "Harry Potter and the Chamber of Secrets",
+        "coverImage": "/book_covers/hp2.jpg",
+        "author": "J.K. Rowling",
+        "isbn": "1408855666",
+        "description": "Harry Potter can’t wait for his holidays with the dire Dursleys to end. But a small, self-punishing house-elf warns Harry of mortal danger awaiting him at Hogwarts. Returning to the castle nevertheless, Harry hears a rumour about a Chamber of Secrets, holding unknown horrors for wizards of Muggle parentage."
+      },
+      {
+        "name": "Jack Reacher: Never Go Back",
+        "coverImage": "/book_covers/jrngb.jpg",
+        "author": "Lee Child",
+        "isbn": "039959325X",
+        "description": "Former military cop Jack Reacher makes it all the way from snowbound South Dakota to his destination in northeastern Virginia, near Washington, D.C.: the headquarters of his old unit, the 110th MP. The old stone building is the closest thing to a home he ever had."
+      },
+      {
+        "name": "The Hitchhiker's Guide to the Galaxy",
+        "coverImage": "/book_covers/hhgtg.jpg",
+        "author": "Douglas Adams",
+        "isbn": "1529034523",
+        "description": "Seconds before the Earth is demolished to make way for a galactic freeway, Arthur Dent is plucked off the planet by his friend Ford Prefect, a researcher for the revised edition of The Hitchhiker's Guide to the Galaxy who, for the last fifteen years, has been posing as an out-of-work actor."
+      },
+      {
+        "name": "Bakemonogatari, Part 1",
+        "coverImage": "/book_covers/bkmg.jpg",
+        "author": "Nisio Isin",
+        "isbn": "1942993889",
+        "description": "There's a girl at their school who is always ill. She routinely arrives late, leaves early, or doesn't show up at all, and skips gym as a matter of course. She's pretty, and the boys take to whispering that she's a cloistered princess. As the self-described worst loser in her class soon finds out, they just don't know what a monster she is."
+      }
+    ]
+  }
+  
